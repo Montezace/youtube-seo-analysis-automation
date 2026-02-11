@@ -3,8 +3,6 @@ from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi
 import openai
 
-# --- CONFIGURATION ---
-# It is better to set these in your environment, but you can paste them here for testing
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
