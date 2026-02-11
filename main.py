@@ -6,7 +6,7 @@ import openai
 # --- CONFIGURATION ---
 # It is better to set these in your environment, but you can paste them here for testing
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "PASTE_YOUR_KEY_HERE")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Initialize Services
 yt_service = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
