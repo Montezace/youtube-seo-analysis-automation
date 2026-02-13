@@ -11,7 +11,7 @@ yt_service = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
 openai.api_key = OPENAI_API_KEY
 
 def get_channel_id(url_or_handle):
-    """Gets Channel ID using handle or search fallback."""
+    """Gets Channel ID using handle or search fallback"""
     handle = url_or_handle.split("@")[-1].split("/")[0].split("?")[0]
     request = yt_service.channels().list(part="id", forHandle=f"@{handle}")
     response = request.execute()
